@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Stjerne-selectoren velger hele dokumentet ditt. Her kan man sette styling som skal gjelde for alt på siden. Her gjør man det som heter en css-reset. 
+Box-sizing: border-box passer på at alt som legges til et element av borders, vil inngå i størrelsen til elementet, fremfor å legges til størrelsen på det.
+Eksempelvis- uten border-box: en div som har en fastsatt vidde på 100px som får en border på 5 px, vil plutselig bli 110px bred, siden den får 5px ekstra på hver side.
+Med border-box vil borderen bevege seg inn i elementet i stedet, slik at du beholder den fastsatte vidden på elementet ditt. 
+
+Her har vi også fjernet margin og padding- dette gjøres fordi det er mange elementer som har implied styling, altså at de har en forhåndsdefinert styling. Dette kan man se på knapper, for eksempel.*/
+img {
+  /* display: block;
+  max-width: 100%; */
+  width: 450px;
+}
+/* Display block passer på at elementet får ta opp plass på en linje for seg selv. */
+body {
+  /* background-color: black;
+  color: white; */
+  /* min-height: 100svh; */
+  min-height: 100%;
+  border: 1px solid white;
+  font-family: "Inter", sans-serif;
+}
+/* Når man styler et dokument, er det viktig å huske at stylingen man legger inn, også vil gjelde for elementet OG dets direkte barn.
+Når man skal sette opp en border kan det være greit å vite at de tre egenskapene kan skrives i hvilken som helst rekkefølge. Her har vi også satt opp min-height: 100svh- dette passer på at innholdet på siden tar opp 100% av small viewport height. Dette betyr også at hvis man sitter på mobil og scroller nedover, vil adressefeltet i nettleseren forsvinne, slik at man ser hele siden bedre. Til slutt har vi satt opp en font-family, som er en skrifttype. Her har vi hentet inn fonten vi hentet fra google fonts, men dersom den ikke er tilgjengelig hos brukeren, vil den defaulte til en annen sans-serif font. */
+h1 {
+  /* text-align: center; */
+  /* margin-top: 50px; */
+  font-size: 40px;
+}
+/* Her har vi stylet kun h1-elementet. Vi har sentrert teksten og gitt den et mellomrom mellom den og toppen av siden på 50px. Til slutt har vi gitt skriften en størrelse på 40px.*/
+h2 {
+  font-size: 2rem;
+}
+/* Em og rem som måleenheter er avhengig av fontstørrelsen i elementet eller i dokumentet. Dette kommer vi mer inn på senere. Til å begynne med kan man gå ut i fra at 1rem er 16px, da dette er default. */
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+/* Her har vi derimot valgt å style flere elementer samtidig, da korter man ned koden. Har man flere elementer som skal ha samme styling, separerer man dem med komma sånn som dette. */
+
+span {
+  font-weight: 700;
+  color: red;
+}
+p {
+  max-width: 450px;
+  margin-inline: auto;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+/* Her har vi gitt paragrafelementene en maks bredde på 450px. Margin inline gir mellomrom kun på sidene. Auto setter den til midten av siden, eller midten av parent elementet, da den får lik plass på begge sider. */
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+/* Her har vi valgt å style flex-container id'en med display flex, eller flexbox. Dette er en stylingtag som gjør det lettere å posisjonere ting på siden din. Vi har sagt at elementene skal legges på rad etterhverandre, samt at elementene skal sentreres både vertikalt og horisontalt. Vi har også gitt elementene et mellomrom på 100px. */
+#para-container {
+  border: solid 1px black;
+  padding: 20px;
+}
