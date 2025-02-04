@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Forteller nettleseren at dette dokumentet er skrevet i HTML5, som er den nyeste gjeldende versjonen av HTML-->
+<html lang="no">
+  <!--Forteller hvilket språk siden er skrevet på-->
+  <head>
+    <!--Head inneholder informasjon som ikke vises på nettsiden, men som inneholder metatags som beskriver siden-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Link til CSS-filen-->
+    <meta charset="UTF-8" />
+    <!--Forteller hvilket character set siden bruker-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Forteller nettleseren hvordan den skal vise siden på forskjellige enheter-->
+    <title>Intro til HTML og CSS 04.02.25</title>
+    <!--Dette er teksten som vises på fanen på nettsiden-->
+  </head>
+  <body>
+    <!-- Body inneholder det som er synlig for brukeren av siden.-->
+    <!--Dette er en kommentar i HTML. Denne er synlig inne i HTML-dokumentet, men ikke på selve siden. Dette kan være nyttig om man skal gi informasjon om dokumentet, om hvorfor ting er satt opp som de er, eller andre ting. Du kan bruke ctrl+* for å starte en kommentar. -->
+    <!--HTML står for Hyper Text Markup Language-->
+    <style>
+      img {
+        width: 100px;
+      }
+    </style>
+    <!--Dette er internal styling. Man har tre måter å style html på:
+    1) internal styling som dette, da skriver man inn stylingen man trenger direkte i HTML.
+    2) inline styling, da styler man direkte i elementet, for eksempel direkte i en p-tag.
+    3) external styling, da legger man inn stylingen i et eget stylesheet som man så linker til i head-seksjonen i HTML.  -->
+
+    <!--De fleste tags i HTML har en opening tag og en closing tag. Noen elementer er self-closing, da trenger man ikke å ha en closing tag på slutten. -->
+    <h1>Velkommen til Kodehode!</h1>
+    <!--Headings er de eneste tags som er nummerert i HTML, fra 1 til 6. Denne sier noe om viktigheten på overskriften. -->
+    <h2>Heisann</h2>
+    <h3>Heisann</h3>
+    <h4>Heisann</h4>
+    <h5>Heisann</h5>
+    <h6>Heisann</h6>
+    <p>
+      <!--p står for paragraf og forteller nettleseren at dette er et element som inneholder tekst. Man kan ha så mange paragrafer man vil på en side.-->
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dignissimos
+      harum deserunt quae libero ipsa maiores veritatis nisi! Consequatur modi
+      sunt eos non saepe ipsum, dolorem natus qui molestiae nisi assumenda
+      deleniti amet ducimus ex soluta dicta, quidem architecto ea deserunt
+      perspiciatis. Unde, eius veritatis. Molestiae suscipit, alias, nostrum
+      adipisci facilis est quo, eum id tempore sed ea eaque corrupti veniam
+      incidunt. Reiciendis praesentium perferendis deserunt accusantium neque
+      amet, ducimus porro quia. Blanditiis labore enim ratione quod iusto saepe?
+      Maxime error quasi doloribus aliquid consequatur officiis vero qui? Sequi
+      earum ad porro vero saepe impedit nam itaque voluptatum, magni aliquam
+      ratione odio? Laudantium eligendi voluptas consequatur ut non velit culpa
+      ipsam nesciunt, quibusdam commodi voluptate aut animi assumenda repellat
+      nam, accusamus adipisci vel laborum ipsum dolores ab nobis at dolore
+      neque. Voluptatibus recusandae rem dolores, nulla excepturi nostrum
+      consequuntur aperiam laborum, facere delectus maxime dolor fugit culpa
+      sint iste. Cumque, ipsa. Neque quasi sit, numquam quas amet laboriosam
+      sequi, mollitia, maxime ipsum debitis nulla esse? Iusto quis placeat
+      eveniet sapiente repudiandae ipsam facilis asperiores explicabo, fugit
+      odit nihil molestias velit quidem saepe quod. Incidunt nobis dolore, earum
+      ut, asperiores soluta consectetur ad voluptatibus sed repellendus quae et
+      unde in nihil!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non atque,
+      corporis dolor officia a, animi quae illo assumenda tempore molestias ea
+      <br />
+      <!--br, eller break, flytter teksten ned på neste linje. Dette er ikke en tag, men en self-closing element-->
+
+      nisi. Veritatis, maxime at necessitatibus sapiente reprehenderit quaerat
+      repudiandae soluta numquam, veniam quod molestiae? Provident et qui
+      repellat reprehenderit atque consequuntur labore voluptatum, fuga quae
+      repellendus vero eveniet inventore!
+    </p>
+    <hr />
+    <!--Dette er en horisontal linje. -->
+    <button>Trykk på meg!</button>
+    <!--Dette er en knapp som kan brukes til å utføre en handling-->
+    <img src="./bread-mae-mu.jpg" alt="Stack of bread." />
+    <!--En alt-tag gir brukeren tekst som beskriver bildet dersom bildet ikke laster inn. Denne forteller også screen readere hva bildet inneholder. -->
+    <!--Image tags er self closing, og trenger litt ulike ting for å virke. Om man trenger bilder som ikke er copyrighted og som er gratis å bruke for kommersiell bruk, kan man hente bilder fra for eksempel unsplash.com eller pexels.com-->
+  </body>
+</html>
