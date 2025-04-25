@@ -1,6 +1,6 @@
 # 🌐 Intro til HTML og CSS – Lær å lage nettsider fra bunnen av!
 
-Dette prosjektet er en pedagogisk og lettfattelig introduksjon til **HTML** og **CSS**, med kode og kommentarer på **norsk 🇳🇴**. Målet er å gi nybegynnere en god forståelse av hvordan nettsider bygges opp, og hvordan man strukturerer og styler innhold på web.
+Dette prosjektet er en  lettfattelig introduksjon til **HTML** og **CSS**, med kode og kommentarer på **norsk 🇳🇴**. Målet er å gi nybegynnere en god forståelse av hvordan nettsider bygges opp, og hvordan man strukturerer og styler innhold på web.
 
 ---
 
